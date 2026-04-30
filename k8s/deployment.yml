@@ -19,10 +19,10 @@ spec:
     spec:
       containers:
         - name: hireflow
-          image: node:18-alpine
+          image: samruddhi0411/hireflow:latest
+          imagePullPolicy: Never
           ports:
             - containerPort: 3000
           env:
             - name: NODE_ENV
               value: "production"
-          restartPolicy: Always
